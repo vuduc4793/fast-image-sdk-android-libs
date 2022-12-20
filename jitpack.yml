@@ -1,3 +1,4 @@
+
 jdk:
   - openjdk11
 install:
@@ -8,3 +9,9 @@ install:
       
       mvn install:install-file \
         -Dfile=$lib \
+        -DgroupId=com.company.rnsdk \
+        -DartifactId=$libName \
+        -Dversion=$VERSION \
+        -Dpackaging=aar \
+        -DgeneratePom=true
+    done
