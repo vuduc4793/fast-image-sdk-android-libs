@@ -1,0 +1,10 @@
+jdk:
+  - openjdk11
+install:
+  - |
+    cd libs
+    for lib in *; do
+      libName=${lib//.aar/}
+      
+      mvn install:install-file \
+        -Dfile=$lib \
