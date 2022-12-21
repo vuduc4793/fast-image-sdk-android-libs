@@ -9,7 +9,7 @@ install:
       
       mvn install:install-file \
         -Dfile=$lib \
-        -DgroupId=com.company.rnsdk \
+        -DgroupId=com.ducvt.fastimagesdk \
         -DartifactId=$libName \
         -Dversion=$VERSION \
         -Dpackaging=aar \
